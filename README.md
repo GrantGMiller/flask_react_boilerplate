@@ -13,7 +13,10 @@ A minimal boilerplate for building a web app with a Flask backend and a React fr
   - [Backend](#backend)
   - [Frontend](#frontend)
 - [Development Notes](#development-notes)
+<<<<<<< HEAD
 - [Troubleshooting](#troubleshooting)
+=======
+>>>>>>> cbe10af (This is an attempt to create a boilerplate)
 - [License](#license)
 
 ---
