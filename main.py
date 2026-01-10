@@ -3,14 +3,18 @@
 # pipenv shell
 # python main.py
 import time
-from flask import Flask, jsonify
+from flask import Flask, jsonify, send_from_directory
 
-app = Flask("Flask React Boilerplate")
+app = Flask(
+    "Flask React Boilerplate",
+    static_folder="react/build",
+    static_url_path="/",
+)
 
 
 @app.route("/")
-def index():
-    return "Hello, World! the time is" + time.asctime()
+def serve_index():
+    return send_from_directory(app.static_folder, "index.html")
 
 
 @app.route("/get_time")
