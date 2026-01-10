@@ -7,13 +7,15 @@ from flask import Flask, jsonify, send_from_directory
 
 app = Flask(
     "Flask React Boilerplate",
-    static_folder="react/build",
+    static_folder="./frontend/build",
     static_url_path="/",
 )
 
 
 @app.route("/")
 def serve_index():
+    print("server index")
+    print('app.static_folder:', app.static_folder)
     return send_from_directory(app.static_folder, "index.html")
 
 
