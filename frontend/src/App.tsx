@@ -1,8 +1,4 @@
 // To start the frontend development server
-<<<<<<< HEAD
-=======
-
->>>>>>> cbe10af (This is an attempt to create a boilerplate)
 // cd frontend
 // npm install
 // npm start
